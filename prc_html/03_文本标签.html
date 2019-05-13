@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>常用的文本标签</title>
+		<style type="text/css">
+			div{
+				border: 1px solid #0F0;
+			}
+			#d1{
+				background-color: #00F;  <!-- #00F  蓝色-->
+			}
+			#d2{
+				background-color: #00FF00;  <!-- #00F  绿色-->
+			}
+		</style>
+	</head>
+	<body>
+		<!--1)标题标签h1~h6-->
+		<h1>标题1</h1>
+		<h2>标题2</h2>
+		<h3>标题3</h3>
+		<h4>标题4</h4>
+		<h5>标题5</h5>
+		<h6>标题6</h6>
+		<h7>标题7</h7> <!--没有效果 -->
+		<!-- 2)换行标签-->
+		<br />
+		窗前明月光，
+		地上鞋两双。
+		<!-- 3)段落标签(携带换行效果)-->
+		<p>飞流直下三千尺</p>
+		<p>一摸口袋没有纸</p>
+		
+		<p>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</p>
+		<p>yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</p>
+		
+		
+		<!-- 4)段落缩进标签(blockquote    引用标签)
+			q标签：(引用标签  小引用)
+			
+		-->
+		<blockquote>yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</blockquote>
+		<q>ojbk</q>
+		
+		<!-- 3)滚动标签
+			marquee:默认滚动方式从右到左
+			属性：
+				behavior:滚动的方式
+					scroll:交替滚动
+					slide:滚动到某一边结束
+					alternate:来回滚动
+			给标签指定背景颜色：bgColor属性(html属性)
+				loop：滚动次数
+				direction:滚动方向
+				scrollamount:滚动速度
+				
+				background-color(CSS背景颜色)
+		-->
+		<marquee behavior="alternate" bgcolor="chartreuse" direction="left" scrollamount="25">
+			<font color="blue" size="7">大家好，请叫我渣渣超，谢谢！</font>
+		</marquee>
+		
+		<!--6）原样输出标签：pre
+			
+		-->
+		<pre>
+			<font color="blue" size="2">
+				窗前明月光，
+				地上鞋两双。
+			</font>	
+		</pre>
+		
+		<!-- 7)上下标标签  sup(上标)  sub(下标)
+			转义字符：&nbsp;空格的特殊字符(代表两个空格)
+					&copy;版权所有
+					&reg:注册商标(已经注册的)
+		-->
+		数学公式: x^2&nbsp; x<sup>2</sup> <br />
+		化学公式：CO2 &nbsp;&nbsp;CO<sub>2</sub> <br />
+		杜氏集团<sup>&copy;</sup> 注册商品<sup>&reg;</sup>   2019-2222  <br />
+		
+		<hr />   <!--hr是分隔线 -->
+		<!--
+			8)列表标签
+				有序列表：ol   li(列表项)
+				无序表：ul   li(列表项)
+				
+				ol/ul属性：
+				type:规定当前列表项的标记
+		-->
+		你喜欢的人物都有哪些的啦？
+		<ul type="square">
+			ul  li    这个表示没有序列表的
+			<li>后裔</li>
+			<li>大乔</li>
+			<li>木兰</li>
+			<li>嬴政</li>
+			<li>韩信</li>
+		</ul>
+		
+		<ol>
+			ol   li 这个表示有序列表
+			<li>鲁班</li>
+			<li>张飞</li>
+			<li>达摩</li>
+			<li>小乔</li>
+			<li>李白</li>
+		</ol>
+		
+		<!--组织架构列表
+			dl  dt  dd
+		-->
+		项目组织架构列表<br />
+		<dl>
+			<dt>校长</dt>
+			<dd>常务副校长</dd>
+			<dd>副校长1</dd>
+			<dd>副校长2</dd>
+			<dd>副校长3</dd>
+			<dt>省长</dt>
+			<dd>常务副省长</dd>
+			<dd>副省长1</dd>
+			<dd>副省长2</dd>
+			<dd>副省长3</dd>
+		</dl>
+		
+		<!--粗体标签
+			 strong：普通的加粗标签
+			b：带一种语义的标签(强调)
+			一般情况用b
+		-->
+		<strong>渣渣超</strong> <br />
+		<font size="6" color="firebrick"><strong>渣渣超</strong></font> <br />
+		<b>渣渣超</b> <br />
+		<!--斜体标签
+			em
+			i:带一种语义的标签(强调)
+		-->
+		<font size="6" color="firebrick"><strong><em>渣渣超</em></strong></font> <br />
+		
+		<font size="6" color="firebrick"><strong><i>渣渣超</i></strong></font> <br />
+		
+		<!--行内标签：表单验证会使用这个标签-->
+		<span>用户名不正确</span> <br />
+		
+		<!--块标签：div标签   
+			网页布局有两种方式：
+				早起的table布局
+				div+css：分层布局(推荐)
+				
+				div会自动换行
+		-->
+		<div id="d1">div1</div>
+		<div id="d2">div2</div>
+		
+		<!--居中标签center-->
+		<font size="5" color="blue"><b><i><center>渣渣超</center></i></b></font> <br />
+	</body>
+</html>
