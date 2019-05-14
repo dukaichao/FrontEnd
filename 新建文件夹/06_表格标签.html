@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表格标签</title>
+		<!--
+			表格标签
+			table	
+				表格的行：tr
+				没有列的概念：td 表格中的单元格
+						   th标签：自动居中并加粗
+				
+			表格标题:caption
+				
+			常用的属性：
+				border：指定边框大小  1px
+				width/height：表格宽高
+				align:表格对齐方式
+				bgColor：背景色
+				cellspacing:单元格和边框线之间的空隙合并
+			td中有两个属性：
+				合并行：rowspan
+				和并列：colspan
+		-->
+	</head>
+	<body>
+		<table border="2px" width="300px" 
+			height="300px" align="center" bgcolor="bisque"
+			cellspacing="0">
+			<caption>成绩表</caption>
+			<tr align="center">
+				<th>姓名</th>
+				<th>成绩</th>
+				<th>班级</th>
+			</tr>
+			<tr align="center">
+				<th>dzt</th>
+				<th>100</th>
+				<th>99</th>
+			</tr>
+			<tr align="center">
+				<th>dz</th>
+				<th>99</th>
+				<th>100</th>
+			</tr>
+			<tr align="center">
+				<th>zy</th>
+				<th>99</th>
+				<th>99</th>
+			</tr>
+		</table>
+	</body>
+</html>
